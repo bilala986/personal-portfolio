@@ -22,6 +22,7 @@ readMoreButton.onclick = function() {
 };
 
 
-
+/*
 let submitButton = document.getElementById('submit');
 submitButton.onclick = alert('You have successfully submitted your form!');
+*/

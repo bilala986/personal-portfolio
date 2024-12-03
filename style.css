@@ -100,14 +100,20 @@ input, select {
 
 * {
     text-decoration: none;
+    font-family: 'Rubik';
 }
 
 header {
+    position: relative;
     text-align: center;
     height: auto;
     overflow: hidden;
     padding-bottom: 90px;
-    height: 600px;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 header::before {
@@ -132,8 +138,8 @@ header video#background-video {
 }
 
 header img {
-    width: 125px;
-    height: 125px;
+    width: 225px;
+    height: 250px;
     display: block;
     margin: 0 auto;
     padding-top: 35px;
@@ -157,23 +163,23 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 15px 15px;
+    margin: 25px 30px;
 }
 
 header nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 35px;
     color: white;
 }
 
 header .header-title {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 header .header-title h1 {
-    padding: 75px;
+    padding: 45px 75px 65px 75px;
 }
 
 header .view-box {
@@ -188,6 +194,7 @@ header .view-box h3 {
     border-radius: 20px;
     color: white;
     transition: all 0.5s ease;
+    margin-top: 20px;
 }
 
 header .view-box h3:hover {
@@ -210,28 +217,29 @@ header .view-box h3:hover {
     text-align: center;
     background-color: rgba(25, 25, 80, 0.9);
     color: white;
-    margin-top: 49px;
 }
 
 .about h2 {
-    font-size: 30px;
-    padding-top: 75px;
+    font-size: 45px;
+    padding: 75px 75px 35px 75px;
 }
 
 .about .about-text {
     margin-top: 50px;
     text-align: justify;
+    padding-bottom: 100px;
 }
 
 .about .about-text h3 {
     text-align: center;
     font-size: 23px;
     color: white;
+    padding-bottom: 25px;
 }
 
 .about .about-text p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 75px;
     padding: 25px 50px;
 }
 
@@ -258,12 +266,21 @@ header .view-box h3:hover {
 }
 
 .projects h2 {
-    font-size: 30px;
+    font-size: 45px;
     margin-bottom: 25px;
+    padding: 50px;
 }
 
 .projects h3 {
+    font-size: 15px;
+    font-weight: normal;
     color: white;
+    padding: 25px 0;
+}
+
+.projects figcaption {
+    padding: 25px 0;
+    margin-top: 25px;
 }
 
 
@@ -276,7 +293,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 25px 10px;
     transition: all 0.5s ease;
 }
@@ -315,7 +332,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 25px 10px;
     transition: all 0.5s ease;
 }
@@ -355,7 +372,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 25px 10px;
     transition: all 0.5s ease;
 }
@@ -395,7 +412,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 25px 10px;
     transition: all 0.5s ease;
 }
@@ -435,7 +452,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 25px 10px;
     transition: all 0.5s ease;
 }
@@ -475,7 +492,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 25px 10px;
     transition: all 0.5s ease;
 }
@@ -515,7 +532,7 @@ header .view-box h3:hover {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    padding: 25px 10px;
+    padding: 25px 10px 35px 10px;
     transition: all 0.5s ease;
 }
 
