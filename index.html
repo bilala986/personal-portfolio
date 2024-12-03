@@ -117,11 +117,12 @@
                     <input id="email" name="email" type="email" required>
                 </section>
                 <hr>
-                <section class="contact-rate">
+                <section class="contact-rate" id="slider-container">
                     <label for="rate">Out of 10, rate our website!</label>
-                    <span>0</span>
-                    <input type="range" id="rate" name="rate" value="5" min="1" max="10" required>
-                    <span>10</span>
+                    <div class="slider-wrapper">
+                        <input type="range" id="rate" name="rate" value="5" min="1" max="10" step="0.1" required>
+                    </div>
+                    <p class="c-value">Current Value: <strong class="slider-value" id="rateValue">5</strong></p>
                 </section>
                 <hr>
                 <section class="notif-q">

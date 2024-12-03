@@ -26,3 +26,15 @@ readMoreButton.onclick = function() {
 let submitButton = document.getElementById('submit');
 submitButton.onclick = alert('You have successfully submitted your form!');
 */
+
+// Select the slider and the output span
+const slider = document.getElementById('rate');
+const output = document.getElementById('rateValue');
+
+// Update the span whenever the slider value changes
+slider.addEventListener('input', () => {
+    // Round the slider value to the nearest integer
+    let sliderValue = Math.round(slider.value);
+    output.textContent = sliderValue;  // Display the rounded integer value
+});
+
