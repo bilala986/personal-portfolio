@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bilal's Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <video autoplay loop muted playsinline id="background-video" class="video-container">
+                <source src="img/background-loop.mp4" type="video/mp4">
+                Your Browser does not support the video tag
+            </video>
+            <img src="img/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-title">
+                <h1>Bilal's Portfolio</h1>
+            </div>
+            <div class="view-box">
+                <a href="#projects">
+                    <h3>View My Work</h3>
+                </a>
+            </div>
+        </header>
+        
+        <main class="about" id="about">
+            <h2>About Me</h2> 
+            <!--<div class="about-image">
+                <img src="img/portrait.jpg">
+            </div> Include this in the desktop version -->
+            <div class="about-text">
+                <h3>Meet Bilal</h3>
+                <p>I'm 18 years old and currently learning to code full-stack websites. I’m passionate about expanding my skills in web development, and I’m excited about the opportunities ahead as I grow in this field. Outside of coding, I really enjoy playing sports — it's a great way for me to stay active and have fun. I’m a hardworking person, always striving to do my best in everything I take on. People often say I have a good personality, and I try to bring positivity and a friendly attitude to whatever I do... <strong class="readMore">Read more</strong></p>
+            </div>
+        </main>
+        
+        <main class="projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="quran-project">
+                <h3>Quran Reading Club (Latest Project)</h3>
+                <figure>
+                    <img src="img/quran-website.PNG" alt='Quran Reading Club'>
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+            <div class="cheat-project">
+                <h3>Cheat Sheet Website</h3>
+                <figure>
+                    <img src="img/cheat-website.PNG" alt='Cheat Sheet Website'>
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+            <div class="dasmoto-project">
+                <h3>Dasmoto's Arts & Crafts</h3>
+                <figure>
+                    <img src="img/dasmoto-website.PNG" alt="Dasmoto's Arts & Crafts">
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+            <div class="fotomatic-project">
+                <h3>Fotomatic</h3>
+                <figure>
+                    <img src="img/fotomatic-website.PNG" alt='Fotomatic'>
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+            <div class="guide-project">
+                <h3>My Website Style Guide</h3>
+                <figure>
+                    <img src="img/guide-website.PNG" alt='My Website Style Guide'>
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+            <div class="tea-project">
+                <h3>Tea Cozy</h3>
+                <figure>
+                    <img src="img/tea-website.PNG" alt='Tea Cozy'>
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+            <div class="umrah-project">
+                <h3>Umrah Experience</h3>
+                <figure>
+                    <img src="img/umrah-website.PNG" alt='Umrah Experience'>
+                    <figcaption>Built using HTML & CSS</figcaption>
+                </figure>
+            </div>
+        </main>
+        
+        <main class="contact" id="contacts">
+            <h2>Send me a message!</h2>
+            <h3>Have any questions or inquiries? Fill in your details below and send a message!</h3>
+            <form method="post">
+                <section class="contact-name">
+                    <label for="name">Name:</label>
+                    <input id='name' name='name' type='text' required>
+                </section>
+                <hr>
+                <section class="contact-password">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" type="password" required>
+                </section>
+                <hr>
+                <section class="contact-number">
+                    <label for="number">Phone Number:</label>
+                    <input id="number" name="number" type="number" required>
+                </section>
+                <hr>
+                <section class="email">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" required>
+                </section>
+                <hr>
+                <section class="contact-rate">
+                    <label for="rate">Out of 10, rate our website!</label>
+                    <span>0</span>
+                    <input type="range" id="rate" name="rate" value="5" min="1" max="10" required>
+                    <span>10</span>
+                </section>
+                <hr>
+                <section class="notif-q">
+                    <span>Would you like to get notified?</span>
+                    
+                    <input id="yes" name="notif" type="radio" value="yes">
+                    <label for="yes">Yes</label>
+                    
+                    <input id="no" name="notif" type="radio" value="no">
+                    <label for="no">No</label>
+                </section>
+                <hr>
+                <section class="how-notif">
+                    <span>How would you like to get notified?</span>
+                    
+                    <input id="email" name="email" type="checkbox">
+                    <label for="email">Email</label>
+                    
+                    <input id="phone-number" name="phone-number" type="checkbox">
+                    <label for="phone-number">Phone Number</label>
+                </section>
+                <hr>
+                <section class="when-notif">
+                    <label class="when-n">When would you like to get notified</label>
+                    <input id="times" list="diff-times" name="times">
+                    <datalist id="diff-times">
+                        <option value="Choose a time that suits you!"></option>
+                        <option value="00:00 (GMT)"></option>
+                        <option value="01:00 (GMT)"></option>
+                        <option value="02:00 (GMT)"></option>
+                        <option value="03:00 (GMT)"></option>
+                        <option value="04:00 (GMT)"></option>
+                        <option value="05:00 (GMT)"></option>
+                        <option value="06:00 (GMT)"></option>
+                        <option value="07:00 (GMT)"></option>
+                        <option value="08:00 (GMT)"></option>
+                        <option value="09:00 (GMT)"></option>
+                        <option value="10:00 (GMT)"></option>
+                        <option value="11:00 (GMT)"></option>
+                        <option value="12:00 (GMT)"></option>
+                        <option value="13:00 (GMT)"></option>
+                        <option value="14:00 (GMT)"></option>
+                        <option value="15:00 (GMT)"></option>
+                        <option value="16:00 (GMT)"></option>
+                        <option value="17:00 (GMT)"></option>
+                        <option value="18:00 (GMT)"></option>
+                        <option value="19:00 (GMT)"></option>
+                        <option value="20:00 (GMT)"></option>
+                        <option value="21:00 (GMT)"></option>
+                        <option value="22:00 (GMT)"></option>
+                        <option value="23:00 (GMT)"></option>
+                    </datalist>
+                </section>
+                <hr>
+                <section class="extra-info">
+                    <label for="extra">Anything else you want to add?</label>
+                    <textarea id="extra" name="extra" rows="7" cols="30"></textarea>
+                </section>
+                <hr>
+                <input type="submit" value="Send" id="submit">
+            </form>
+        </main>
+        
+        <footer>
+            <a href="https://www.facebook.com/"><img src="img/facebook.jpg" alt='Facebook Profile Link'></a>
+            <a href="linkedin.com"><img src="img/linkedin.jpg" alt='LinkedIn Profile Link'></a>
+            <a href="instagram.com"><img src="img/insta.jpg" alt='Instagram Profile Link' class="insta"></a>
+        </footer>
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

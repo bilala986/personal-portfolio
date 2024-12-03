@@ -1,0 +1,703 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/* ********************************* HEADER - MOBILE ****************************************** */
+
+* {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 90px;
+    height: 600px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+header video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header img {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+header .header-title, header nav ul li a, header .view-box {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 15px 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+header .header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+header .header-title h1 {
+    padding: 75px;
+}
+
+header .view-box {
+    margin: 0px 30%;
+    padding-bottom: 75px;
+}
+
+header .view-box h3 {
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+header .view-box h3:hover {
+    background-color: rgba(0, 64, 0, 0.4);
+    border-radius: 40px;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* ********************************* ABOUT - MOBILE ****************************************** */
+
+.about {
+    text-align: center;
+    background-color: rgba(25, 25, 80, 0.9);
+    color: white;
+    margin-top: 49px;
+}
+
+.about h2 {
+    font-size: 30px;
+    padding-top: 75px;
+}
+
+.about .about-text {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.about .about-text h3 {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+}
+
+.about .about-text p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 50px;
+}
+
+.about .about-text p strong {
+    color: lightcoral;
+    cursor: pointer;
+}
+
+.about .about-text p strong:hover {
+    color: lightcyan;
+    cursor: pointer;
+}
+
+
+
+/* ********************************* PROJECTS - MOBILE ****************************************** */
+
+.projects {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    background-color: rgba(47, 79, 79, 0.9);
+    color: white;
+}
+
+.projects h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.projects h3 {
+    color: white;
+}
+
+
+/******************************QURAN**********************************/
+
+.projects .quran-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .quran-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(54, 69, 79, 0.4);
+}
+
+.projects .quran-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .quran-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .quran-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+/******************************CHEAT SHEET**********************************/
+
+.projects .cheat-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .cheat-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(34, 49, 34, 0.4);
+}
+
+.projects .cheat-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .cheat-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .cheat-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+
+/******************************DASMOTO SHEET**********************************/
+
+.projects .dasmoto-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .dasmoto-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(74, 45, 26, 0.4);
+}
+
+.projects .dasmoto-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .dasmoto-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .dasmoto-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+
+/******************************FOTOMATIC SHEET**********************************/
+
+.projects .fotomatic-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .fotomatic-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(0, 77, 82, 0.4);
+}
+
+.projects .fotomatic-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .fotomatic-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .fotomatic-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+
+/******************************GUIDE SHEET**********************************/
+
+.projects .guide-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .guide-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(128, 0, 32, 0.4);
+}
+
+.projects .guide-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .guide-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .guide-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+
+/******************************TEA SHEET**********************************/
+
+.projects .tea-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .tea-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(75, 0, 130, 0.4);
+}
+
+.projects .tea-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .tea-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .tea-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+
+/******************************UMRAH SHEET**********************************/
+
+.projects .umrah-project {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.projects .umrah-project:hover {
+    border: 2px solid white;
+    border-radius: 60px;
+    background-color: rgba(139, 0, 0, 0.4);
+}
+
+.projects .umrah-project h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.projects .umrah-project img {
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.projects .umrah-project figcaption {
+    text-align: center;
+    font-size: 17.5px;
+    padding-top: 17.5px;
+}
+
+
+
+
+/* ********************************* CONTACT - MOBILE ****************************************** */
+
+.contact {
+    background: #ddd;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.contact h2, h3 {
+    margin: 0 0 15px;
+    color: #333;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+input, textarea, select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f7f7f7;
+    transition: border-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none; /* Disable resizing */
+}
+
+
+
+
+
+/* ********************************* FOOTER - MOBILE ****************************************** */
+
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 250px;
+}
+
+footer img {
+    width: 65px;
+    height: 65px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+footer .insta {
+    width: 80px;
+    height: 65px;
+    transition: all 0.3s ease;
+}
+
+
+footer img:hover {
+    width: 70px;
+    height: 70px;
+    padding: 25px;
+}
+
+footer .insta:hover {
+    width: 82.5px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
