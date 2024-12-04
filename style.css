@@ -170,6 +170,12 @@ header nav ul li a {
     text-decoration: none;
     font-size: 35px;
     color: white;
+    transition: all 0.5s ease;
+}
+
+header nav ul li a:hover {
+    font-size: 38px;
+    color: lightcoral;
 }
 
 header .header-title {
@@ -207,8 +213,101 @@ header .view-box h3:hover {
 
 
 
+/* ********************************* HEADER - TABLET ****************************************** */
 
+@media only screen and (min-width: 786px) {
+    header {
+        display: grid;
+        grid-template-areas: 
+            'logo nav'
+            'title title'
+            'view view';
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        padding: 0;
+    }
 
+    header .header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(173, 216, 230, 0.9);
+        padding: 0px 20px;
+        z-index: 1;
+    }
+
+    header .header-logo img {
+        width: 150px;
+        height: auto;
+        padding: 20px;
+        order: 2;
+        transition: all 0.5s ease;
+    }
+    
+    header .header-logo img:hover {
+        width: 160px;
+        height: auto;
+        padding: 20px;
+        order: 2;
+    }
+
+    header nav {
+        grid-area: nav;
+        align-self: center;
+        justify-self: end;
+        margin-left: 20px;
+        order: 1;
+        padding: 0px 100px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        font-size: 28px;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+        color: lightcoral;
+        font-size: 31px;
+        
+    }
+
+    header .header-title {
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 175px;
+    }
+
+    header .view-box {
+        grid-area: view;
+        justify-self: center;
+        align-self: center;
+        width: 50%;
+    }
+
+    header .view-box h3 {
+        font-size: 24px;
+        padding: 30px;
+        text-align: center;
+    }
+}
 
 
 /* ********************************* ABOUT - MOBILE ****************************************** */
@@ -633,7 +732,7 @@ input, textarea, select {
     height: 35px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 14px;
     background: #f7f7f7;
     transition: border-color 0.3s;
@@ -690,6 +789,7 @@ textarea {
     font-size: 35px;
     width: 80%;
     height: 90px; 
+    border-radius: 30px;
 }
 
 
