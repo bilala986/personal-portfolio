@@ -120,6 +120,8 @@ strong:hover {
     cursor: pointer;
 }
 
+
+
 /* ********************************* GENRAL - TABLET ****************************************** */
 
 
@@ -500,6 +502,14 @@ header .view-box h3:hover {
     margin-top: 25px;
 }
 
+.projects .desc {
+        text-align: justify; /* Justify the long description for neatness */
+        line-height: 40px;
+        font-size: 20px;
+        padding: 1.5%;
+        padding-right: 30px;
+    }
+
 
 
 
@@ -540,6 +550,8 @@ header .view-box h3:hover {
     font-size: 17.5px;
     padding-top: 0px;
 }
+
+
 
 
 /******************************CHEAT SHEET**********************************/
@@ -821,6 +833,8 @@ header .view-box h3:hover {
         display: block; /* Ensure it displays as intended */
         margin-top: 0;
     }
+    
+    
     
     
     
