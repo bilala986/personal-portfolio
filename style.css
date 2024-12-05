@@ -95,13 +95,41 @@ input, select {
 
 
 
-
-/* ********************************* HEADER - MOBILE ****************************************** */
+/* ********************************* GENRAL - MOBILE ****************************************** */
 
 * {
     text-decoration: none;
     font-family: 'Rubik';
 }
+
+.projects a {
+    color: white;
+}
+
+.projects .long-description {
+    display: none;
+}
+
+strong {
+    color: lightcoral;
+    cursor: pointer;
+}
+
+strong:hover {
+    color: lightcyan;
+    cursor: pointer;
+}
+
+/* ********************************* GENRAL - TABLET ****************************************** */
+
+
+
+
+/* ********************************* GENRAL - LAPTOP ****************************************** */
+
+
+
+/* ********************************* HEADER - MOBILE ****************************************** */
 
 header {
     position: relative;
@@ -236,7 +264,7 @@ header .view-box h3:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(173, 216, 230, 0.9);
+        background-color: rgba(13, 16, 100, 0.9);
         padding: 0px 20px;
         z-index: 1;
     }
@@ -311,6 +339,103 @@ header .view-box h3:hover {
 }
 
 
+/* ********************************* HEADER - LAPTOP ****************************************** */
+
+@media only screen and (min-width: 1024px) {
+    header {
+        display: grid;
+        grid-template-areas: 
+            'logo nav'
+            'title title'
+            'view view';
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        padding: 0;
+    }
+
+    header .header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(13, 16, 100, 0.9);
+        padding: 0px 20px;
+        z-index: 1;
+    }
+
+    header .header-logo img {
+        width: 115px;
+        height: auto;
+        padding: 20px;
+        order: 2;
+        transition: all 0.5s ease;
+    }
+    
+    header .header-logo img:hover {
+        width: 125px;
+        height: auto;
+        padding: 20px;
+        order: 2;
+    }
+
+    header nav {
+        grid-area: nav;
+        align-self: center;
+        justify-self: end;
+        margin-left: 20px;
+        order: 1;
+        padding: 0px 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        margin: 0;
+        padding-right: 50px;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        font-size: 22px;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+        color: lightcoral;
+        font-size: 25px;
+        
+    }
+
+    header .header-title {
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: 45px;
+        padding-top: 175px;
+    }
+
+    header .view-box {
+        grid-area: view;
+        justify-self: center;
+        align-self: center;
+        width: 50%;
+    }
+
+    header .view-box h3 {
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
 /* ********************************* ABOUT - MOBILE ****************************************** */
 
 .about {
@@ -343,15 +468,7 @@ header .view-box h3:hover {
     padding: 25px 50px;
 }
 
-.about .about-text p strong {
-    color: lightcoral;
-    cursor: pointer;
-}
 
-.about .about-text p strong:hover {
-    color: lightcyan;
-    cursor: pointer;
-}
 
 
 
@@ -378,10 +495,12 @@ header .view-box h3:hover {
     padding: 25px 0;
 }
 
-.projects figcaption {
+.projects .short-description {
     padding: 25px 0;
     margin-top: 25px;
 }
+
+
 
 
 /******************************QURAN**********************************/
@@ -416,10 +535,10 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .quran-project figcaption {
+.projects .quran-project .short-description {
     text-align: center;
     font-size: 17.5px;
-    padding-top: 17.5px;
+    padding-top: 0px;
 }
 
 
@@ -455,7 +574,7 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .cheat-project figcaption {
+.projects .cheat-project .short-description {
     text-align: center;
     font-size: 17.5px;
     padding-top: 17.5px;
@@ -495,7 +614,7 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .dasmoto-project figcaption {
+.projects .dasmoto-project .short-description {
     text-align: center;
     font-size: 17.5px;
     padding-top: 17.5px;
@@ -535,7 +654,7 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .fotomatic-project figcaption {
+.projects .fotomatic-project .short-description {
     text-align: center;
     font-size: 17.5px;
     padding-top: 17.5px;
@@ -575,7 +694,7 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .guide-project figcaption {
+.projects .guide-project .short-description {
     text-align: center;
     font-size: 17.5px;
     padding-top: 17.5px;
@@ -615,7 +734,7 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .tea-project figcaption {
+.projects .tea-project .short-description {
     text-align: center;
     font-size: 17.5px;
     padding-top: 17.5px;
@@ -654,11 +773,366 @@ header .view-box h3:hover {
     border-radius: 15px;
 }
 
-.projects .umrah-project figcaption {
+.projects .umrah-project .short-description {
     text-align: center;
     font-size: 17.5px;
-    padding-top: 17.5px;
+    padding-top: 0px;
 }
+
+
+
+
+
+
+
+
+
+/* ********************************* PROJECTS - LAPTOP ****************************************** */
+
+
+
+@media only screen and (min-width: 1400px) {
+    .projects {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        text-align: center;
+        background-color: rgba(47, 79, 79, 0.9);
+        color: white;
+    }
+    
+    .projects h2 {
+        font-size: 45px;
+        margin-bottom: 25px;
+        padding: 50px;
+    }
+
+    .projects h3 {
+        font-size: 15px;
+        font-weight: normal;
+        color: white;
+        padding: 25px 0;
+    }
+
+    .projects .short-description {
+        font-size: 17.5px;
+    }
+
+    .projects .long-description {
+        display: block; /* Ensure it displays as intended */
+        margin-top: 0;
+    }
+    
+    
+    
+    /******************************QURAN**********************************/
+
+    .projects .quran-project {
+        display: flex; /* Flexbox layout for child elements */
+        flex-direction: column; /* Stack children vertically by default */
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 25px 10px;
+        transition: all 0.5s ease;
+        margin-bottom: 50px;
+    }
+
+    .projects .quran-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(54, 69, 79, 0.4);
+    }
+    
+    .projects .content-wrapper {
+        display: flex; /* Horizontal layout for child elements */
+        justify-content: space-between; /* Push content to opposite sides */
+        align-items: flex-start; /* Align items to the top */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+    
+    .projects .img-desc {
+        width: 45%; /* Adjust width to fit content */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects .img-desc img {
+        width: 100%; /* Ensure the image scales within its container */
+        border-radius: 15px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .projects .quran-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .quran-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .quran-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+    }
+    
+    .projects .desc {
+        width: 50%; /* Adjust width to balance with image */
+        padding-left: 15px;
+        text-align: justify; /* Justify the long description for neatness */
+        line-height: 40px;
+        font-size: 20px;
+        padding: 1.5%;
+        padding-right: 30px;
+    }
+
+
+    /******************************CHEAT SHEET**********************************/
+
+    .projects .cheat-project {
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 25px 10px;
+        transition: all 0.5s ease;
+    }
+
+    .projects .cheat-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(34, 49, 34, 0.4);
+    }
+
+    .projects .cheat-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .cheat-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .cheat-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+        padding-top: 17.5px;
+    }
+
+
+
+    /******************************DASMOTO SHEET**********************************/
+
+    .projects .dasmoto-project {
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 25px 10px;
+        transition: all 0.5s ease;
+    }
+
+    .projects .dasmoto-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(74, 45, 26, 0.4);
+    }
+
+    .projects .dasmoto-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .dasmoto-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .dasmoto-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+        padding-top: 17.5px;
+    }
+
+
+
+    /******************************FOTOMATIC SHEET**********************************/
+
+    .projects .fotomatic-project {
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 25px 10px;
+        transition: all 0.5s ease;
+    }
+
+    .projects .fotomatic-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(0, 77, 82, 0.4);
+    }
+
+    .projects .fotomatic-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .fotomatic-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .fotomatic-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+        padding-top: 17.5px;
+    }
+
+
+
+    /******************************GUIDE SHEET**********************************/
+
+    .projects .guide-project {
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 25px 10px;
+        transition: all 0.5s ease;
+    }
+
+    .projects .guide-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(128, 0, 32, 0.4);
+    }
+
+    .projects .guide-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .guide-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .guide-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+        padding-top: 17.5px;
+    }
+
+
+
+    /******************************TEA SHEET**********************************/
+
+    .projects .tea-project {
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 25px 10px;
+        transition: all 0.5s ease;
+    }
+
+    .projects .tea-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(75, 0, 130, 0.4);
+    }
+
+    .projects .tea-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .tea-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .tea-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+        padding-top: 17.5px;
+    }
+
+
+
+    /******************************UMRAH SHEET**********************************/
+
+    .projects .umrah-project {
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 25px 10px 35px 10px;
+        transition: all 0.5s ease;
+    }
+
+    .projects .umrah-project:hover {
+        border: 2px solid white;
+        border-radius: 60px;
+        background-color: rgba(139, 0, 0, 0.4);
+    }
+
+    .projects .umrah-project h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .projects .umrah-project img {
+        width: 85%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .projects .umrah-project .short-description {
+        text-align: center;
+        font-size: 17.5px;
+        padding-top: 17.5px;
+    }
+}
+
 
 
 
@@ -738,6 +1212,10 @@ textarea {
     padding: 0 20px;
     display: flex;
     align-items: center;
+}
+
+.slider-wrapper strong {
+    color: darkblue;
 }
 
 /* Styling for the range input */
