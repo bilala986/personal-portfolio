@@ -120,6 +120,10 @@ strong:hover {
     cursor: pointer;
 }
 
+.about-image {
+    display: none;
+}
+
 
 
 /* ********************************* GENRAL - TABLET ****************************************** */
@@ -472,7 +476,108 @@ header .view-box h3:hover {
 
 
 
+/* ********************************* ABOUT - LAPTOP ****************************************** */
 
+@media only screen and (min-width: 1200px) {
+    .about {
+        text-align: center;
+        background-color: rgba(25, 25, 80, 0.9);
+        color: white;
+        overflow: hidden; /* Optional: prevents content spillover */
+    }
+
+    .about h2 {
+        font-size: 45px;
+        padding: 75px 75px 35px 75px;
+    }
+
+    .about .about-text {
+        margin-top: 50px;
+        text-align: justify;
+        padding-bottom: 100px;
+    }
+
+    .about .about-text h3 {
+        text-align: center;
+        font-size: 23px;
+        color: white;
+        padding-bottom: 5px;
+    }
+
+    .about .about-text p {
+        font-size: 20px;
+        line-height: 75px;
+        padding: 5px 50px 25px 50px;
+        margin-right: 2.5%;
+        width: 40%;
+        float: right;
+    }
+
+    .about .about-image {
+        display: block;
+        width: 40%;
+        float: left;
+        margin-left: 2.5%;
+        margin-top: 50px;
+    }
+
+    .about .about-image img {
+        height: 600px;
+    }
+
+    /* Clearfix for floated elements */
+    .about::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .readMore1 {
+        display: none;
+    }
+}
+
+/* ********************************* ABOUT - PC ****************************************** */
+
+@media only screen and (min-width: 1600px) {
+    
+    .about {
+        text-align: center;
+        background-color: rgba(25, 25, 80, 0.9);
+        color: white;
+        max-width: 85%;
+        margin: 0 auto;
+        border-radius: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about h2 {
+        font-size: 45px;
+        padding: 75px 75px 35px 75px;
+    }
+
+    .about .about-text {
+        margin-top: 50px;
+        text-align: justify;
+        padding-bottom: 100px;
+    }
+
+    .about .about-text h3 {
+        text-align: center;
+        font-size: 23px;
+        color: white;
+        padding-bottom: 25px;
+    }
+
+    .about .about-text p {
+        font-size: 20px;
+        line-height: 75px;
+        padding: 25px 50px;
+    }
+
+
+}
 
 /* ********************************* PROJECTS - MOBILE ****************************************** */
 
@@ -834,9 +939,7 @@ header .view-box h3:hover {
         margin-top: 0;
     }
     
-    
-    
-    
+        
     
     /******************************QURAN**********************************/
 
@@ -1151,6 +1254,32 @@ header .view-box h3:hover {
 
 
 
+
+/* ********************************* PROJECTS - PC ****************************************** */
+
+
+
+@media only screen and (min-width: 1600px) {
+    .projects {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        text-align: center;
+        background-color: rgba(47, 79, 79, 0.9);
+        color: white;
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 30px;
+    }
+}
+
+
+
+
+
+
+
 /* ********************************* CONTACT - MOBILE ****************************************** */
 
 .contact {
@@ -1284,6 +1413,171 @@ textarea {
 @media only screen and (min-width: 786px) {
     
 }
+
+
+
+/* ********************************* CONTACT - LAPTOP ****************************************** */
+
+@media only screen and (min-width: 1024px) {
+    .contact {
+        background: rgba(221, 221, 221, 0.9);
+        padding: 40px 50px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .contact h2, h3 {
+        margin: 0 0 15px;
+        color: #333;
+        text-align: center;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        padding: 40px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+        color: #555;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    label, span {
+        font-size: 17.5px;
+        padding: 15px;
+        font-weight: bold;
+        color: #555;
+        text-align: center;
+    }
+
+    .c-value {
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    input, textarea, select {
+        width: 80%;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 12px;
+        background: #f7f7f7;
+        transition: border-color 0.3s;
+        display: block;
+        margin: 0 auto;
+    }
+
+    textarea {
+        height: 140px;
+        padding: 20px;
+    }
+
+    /* Slider wrapper with padding */
+    .slider-wrapper {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider-wrapper strong {
+        color: darkblue;
+    }
+
+    /* Styling for the range input */
+    input[type="range"] {
+        -webkit-appearance: none; /* Removes default browser styling */
+        width: 100%; /* Full width of the container */
+        height: 6px; /* Slider height */
+        background: linear-gradient(to right, #003366, #66ccff); /* Dark blue to light blue gradient */
+        border-radius: 5px; /* Rounded corners */
+        outline: none; /* Remove outline */
+        transition: background 0.3s; /* Smooth background transition */
+    }
+
+    /* Styling for the thumb (the ball inside) */
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove default styling */
+        width: 18px; /* Thumb size */
+        height: 18px; /* Thumb size */
+        background: black; /* Set the thumb color to black */
+        border-radius: 50%; /* Round the thumb */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: transform 0.2s; /* Smooth scaling effect */
+    }
+
+    /* Hover effect for the thumb */
+    input[type="range"]::-webkit-slider-thumb:hover {
+        transform: scale(1.2); /* Slightly enlarge the thumb on hover */
+    }
+
+
+    input:focus, textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    textarea {
+        resize: none; /* Disable resizing */
+    }
+
+    #submit {
+        color: black;
+        font-size: 17.5px;
+        width: 70%;
+        height: 50px; 
+        border-radius: 20px;
+        transition: all 0.5s ease;
+    }
+    
+    #submit:hover {
+        color: white;
+        background-color: darkblue;
+        box-shadow: 7.5px 7.5px darkgray;
+        font-size: 18.5px;
+        width: 72.5%;
+        height: 50px; 
+        border-radius: 30px;
+    }
+}
+
+
+
+
+/* ********************************* CONTACT - PC ****************************************** */
+
+@media only screen and (min-width: 1600px) {
+    .contact {
+        background: rgba(221, 221, 221, 0.9);
+        padding: 40px 50px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 30px;
+    }
+}
+
 
 
 /* ********************************* FOOTER - MOBILE ****************************************** */

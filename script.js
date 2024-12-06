@@ -48,46 +48,6 @@ readMoreButton.onclick = function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const readMoreTexts = {
         readMore2: `Our team of experienced and compassionate teachers brings an incredible depth of knowledge in Tajweed, Tafsir, and Quranic studies, ensuring that every lesson is not only educational but also spiritually transformative. They are dedicated to making the Quran accessible and meaningful, offering personalized guidance to help you uncover its timeless wisdom and relevance to your life. The learning process in our club is thoughtfully designed to accommodate individuals of all skill levels, from beginners to advanced learners, allowing everyone to grow at their own pace in a positive, welcoming, and encouraging environment. As a member of our Quran Reading Club, you’ll have the opportunity to participate in engaging group discussions, reflective readings, and enriching sessions that deepen your understanding of the Quran’s teachings while fostering a sense of community. Our goal is to create a space where you can nurture your spiritual growth, strengthen your bond with the Quran, and experience the joy of learning alongside like-minded individuals who share your commitment to faith. We warmly invite you to join us on this transformative journey, where every moment spent in study and reflection becomes a step closer to a deeper connection with the divine.`,
